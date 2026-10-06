@@ -4,7 +4,7 @@ ORIGINAL denotes preserved evidence. DOCUMENTED denotes explicit equations/value
 
 | Module | Source trace | Numeric status |
 | --- | --- | --- |
-| Model I documented_rhs | Private paper pp7–8 eq5–14; four-species notes | Structural equations documented; earlier numbers missing |
+| Model I documented_rhs | Competition paper pp7–8 eq5–14; four-species notes | Structural equations documented; earlier numbers missing |
 | Harvest | Paper p8 eq15 | First-cycle reset documented; repeating schedule/ordering new |
 | documented_metrics | Paper p8 eq16–18 | Formula documented; weights assumed |
 | Model II RHS | Paper p11 eq19–23 | Both printed N4² and code-informed N4*N6 retained |
@@ -19,4 +19,5 @@ C42 scalar: initial[200,40,30,20,20,10,50,10 BPC], F10 OFU,dt.1,horizon100,K3/K5
 CA: source n80/3000/dt.1,crop200,random species bounds,periods6/12,retention.8,center-inclusive zero-padded /9 neighborhoods and scalar noise1+.03(U−.5) are preserved. Unusual neighborhood/constant-season terms remain. CA pest cost15 differs from C42's12. Export n24/420/seed20251027 and corrected fixed RGB scales are NEW engineering choices, not recovered original RNG/pixels.
 
 Every earlier analogy is tagged in the CSV and human ASSUMED_PARAMETERS registry, with values, units, bounds, rationale and confidence. Model III herbicide zero overrides the shared assumed baseline. Algebra-test toy values are test-only fixtures. No historical target or convergence/regression sample is used for fitting.
+
 

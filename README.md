@@ -1,6 +1,6 @@
 # Reconstructed farmland ecosystem models
 
-A MATLAB reconstruction of four modeling workflows developed around the 2025 ICM Problem E farmland ecosystem problem. The complete original competition codebase was not recovered. Some historical MATLAB implementation survives privately. The public code is a reconstructed implementation based on the private paper, surviving mathematical notes, selected historical source behavior and documented results.
+A MATLAB reconstruction of four modeling workflows developed around the 2025 ICM Problem E farmland ecosystem problem. The complete original competition codebase was not recovered. Some historical MATLAB implementation survives privately. The public code is a reconstructed implementation based on the competition paper, surviving mathematical notes, selected historical source behavior and documented results.
 
 **Models I–III use explicitly disclosed reconstruction assumptions where historical parameters are unavailable. These are not the exact original competition parameters.** Task4 contains both source-compatible and corrected reconstructed variants. This repository serves reproducibility, portfolio and educational purposes; it is not validated agricultural forecasting.
 
@@ -67,11 +67,13 @@ scripts/                batch runner and release verification
 docs/methodology/        assumptions, traceability, corrections, reproduction
 docs/results/           findings and sensitivity
 results/reproduced/     new plots, CSV, configurations and verification JSON
+historical-documents/   authorized historical paper and certificate; outside MIT
 ```
 
 ## Context, acknowledgment and license
 
-Historical contest mathematics and private competition work motivate this reconstruction. Paper equation/page references identify private evidence, intentionally not bundled. Award certificate material and participant identities are excluded. Cite the release tag and parameter profile when using an output; do not cite this as the full original competition source.
+Historical contest mathematics and competition work motivate this reconstruction. The [original paper and award certificate](historical-documents/README.md) are included as explicitly authorized historical copies in a separate folder. Their historical names, signatures and document metadata are retained; the rest of the private archive remains excluded. Cite the release tag and parameter profile when using an output; do not cite this as the full original competition source.
 
-[MIT](LICENSE) applies to newly authored reconstructed software only. It grants no rights over contest documents, private historical source/documents, reference papers, datasets, photographs, certificates or third-party artifacts. Reviewed target transcriptions are attributed evidence outside the software license claim. All displayed images are newly generated plots/CA renderings. The public candidate uses an explicit whitelist and fresh Git history; internal audits/history and originals are excluded. Remote publication requires separate authorization.
+[MIT](LICENSE) applies to newly authored reconstructed software only. It grants no rights over contest documents, private historical source/documents, reference papers, datasets, photographs, certificates or third-party artifacts. Reviewed target transcriptions are attributed evidence outside the software license claim. All displayed images are newly generated plots/CA renderings. This public repository was prepared from an explicit whitelist and fresh Git history. Internal audit/history and the private archive are excluded, with only the two hash-pinned historical PDF copies explicitly authorized.
+
 

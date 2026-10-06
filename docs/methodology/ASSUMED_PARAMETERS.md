@@ -12,7 +12,7 @@ The solver is segmented ode45. Applications occur at 0,6,12,… and reset chemic
 
 The mean standing crop, not cumulative harvested yield, defines income. Mean stability is a chemical-weighted Simpson proxy, not a dynamical stability certificate. Objective weights and price are new preferences. Unit costs [2,50,40] are documented; cost retains the printed one-dose convention even though the reconstructed solver repeats applications. It is a normalized comparison index, not a full recurrent farm budget.
 
-Optimization uses base MATLAB only: independent Cartesian grid over the declared bounds, followed by deterministic bounded coordinate refinement beginning at the best grid/baseline candidate. Both evaluations and incumbents are exported. Each sweep tests plus/minus each free coordinate and halves its step. Model III fixes V1=0. There is no random sampling or GA seed, and no original GA convergence is claimed. Grid agreement provides a finite-domain check, not proof of a global continuous optimum.
+Optimization uses base MATLAB only: deterministic bounded coordinate search beginning at the declared baseline, followed by an independent Cartesian grid over the declared bounds and additional refinement if the grid improves the initial search. Both evaluations and incumbents are exported. Each sweep tests plus/minus each free coordinate and halves its step. Model III fixes V1=0. There is no random sampling or GA seed, and no original GA convergence is claimed. Grid agreement provides a finite-domain check, not proof of a global continuous optimum.
 
 The six Model I dose pairs alone are DOCUMENTED Figure4 labels. Model III herbicide zero and unit costs are DOCUMENTED. All other numeric earlier-model defaults are explicitly new. Historical initial conditions, parameters, application logic, solver, original GA history, RNG state and regression samples remain unrecoverable.
 
@@ -90,4 +90,5 @@ The six Model I dose pairs alone are DOCUMENTED Figure4 labels. Model III herbic
 | gridLevels | I-II-III | 4 | 4 / 4 | 3 to 5 | independent coarse grid levels per free decision; integer | NORMALIZED_RECONSTRUCTION_ASSUMPTION |
 | searchSweeps | I-II-III | 6 | 6 / 6 | 3 to 8 | coordinate search sweeps; integer | NORMALIZED_RECONSTRUCTION_ASSUMPTION |
 | searchStepFraction | I-II-III | 0.25 | 0.25 / 0.25 | 0.125 to 0.5 | initial coordinate step fraction of bounds span; dimensionless | NORMALIZED_RECONSTRUCTION_ASSUMPTION |
+
 

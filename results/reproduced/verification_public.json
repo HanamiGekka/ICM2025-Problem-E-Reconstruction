@@ -2,7 +2,7 @@
   "label": "public",
   "matlab": "23.2.0.2365128 (R2023b)",
   "batch": true,
-  "passed": 29,
+  "passed": 30,
   "failed": 0,
   "incomplete": 0,
   "names": [
@@ -22,6 +22,7 @@
     "test_reconstructed/testParameterBoundsAndUnits",
     "test_release/testNoPrivateRuntimeDependency",
     "test_release/testReleaseWhitelist",
+    "test_release/testAuthorizedHistoricalCopies",
     "test_targets/testTranscription",
     "test_targets/testSensitivityArithmetic",
     "test_task4/testCosts",

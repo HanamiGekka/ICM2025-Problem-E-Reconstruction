@@ -1,6 +1,6 @@
 # Reconstruction scope and evidence boundaries
 
-RUN #2.x implements four complete runnable reconstructed workflows. It does not recover the complete original competition source. Historical files remain immutable/private. Earlier numeric defaults are authorized assumptions, not empirical data or fitted historic parameters.
+RUN #2.x implements four complete runnable reconstructed workflows. It does not recover the complete original competition source. The complete historical archive remains immutable/private; two explicitly authorized PDF copies are published separately. Earlier numeric defaults are authorized assumptions, not empirical data or fitted historic parameters.
 
 Models I–III share paper equations and metrics. documented_only preserves numeric gaps. Baseline/low/high profiles use a central70-row registry. Segmented ode45, recurring events, positivity policy, aggregation, preferences and bounded optimization are new. Literal N4²/pollination-F branches remain alongside principal code-informed/population-coupled choices. Unit costs, V1=0 and six Figure4 dose pairs are DOCUMENTED. Read ASSUMED_PARAMETERS.md.
 
@@ -12,5 +12,6 @@ Model II paper/alternate and Model III targets remain separate. New comparisons 
 
 Table7 endpoint slopes .00288/−.01896 differ from printed .00866/−.05872. New44-row sensitivity and9 stress profiles are reconstruction analysis, not historical regression. Original GA/RNG/regression samples/R²/exact earlier parameters/solver are unrecoverable. No post-hoc calibrated profile is needed.
 
-Public preparation uses fresh history and reviewed software, English methodology, transcriptions and regenerated results. Original/demand/temp/.work/audit/history, certificate, contest/reference documents/datasets and raw personal metadata are excluded. Public tests run without originals; private preservation remains mandatory. No remote/push is authorized.
+The public repository uses fresh history and reviewed software, English methodology, transcriptions and regenerated results. A separate historical-documents folder contains only the expressly authorized paper/certificate copies, with exact hashes and a license-scope notice. Original/demand/temp/.work/audit/history and other contest/reference documents/datasets remain excluded. Public tests run without the private archive; private preservation remains mandatory. This publication round authorizes the named GitHub repository and release.
+
 

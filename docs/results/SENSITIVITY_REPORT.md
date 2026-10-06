@@ -20,8 +20,10 @@ Ranking uses the maximum absolute relative change across crop, stability and uti
 | pollination_decay | 0.000522 |
 | upper_bound_1 | 0 |
 | upper_bound_3 | 0 |
+
 Income preference and crop–pest interaction dominate this screening (.133812/.111988). Initial pests, herbicide efficacy and initial/replant crop follow. Bee-coupling influence is smaller for these settings; this is not evidence that pollination is unimportant in agriculture. Upper F/V2 bound variation has no effect because the selected optimum is at all lower bounds.
 
 Joint stress profiles produce crop ranges318.251–374.154 (Model I),324.979–360.310 (II),332.499–355.533 (III). The profiles simultaneously change initial abundances and interactions, so their effects are not additive OAT effects. Neither profile bounds real-world risk, and no probability bands are claimed. Machine-readable OAT, ranking and stress-profile CSVs accompany the full experiment configuration.
 
 The tests replay representative OAT cases across all three models and check declared registry bounds and export completeness. Entire private/public numerical reruns compare CSV bytes; timestamp-bearing JSON/PNG containers are treated separately from numerical values. No Monte Carlo, regression fitting or post-hoc calibration is presented.
+

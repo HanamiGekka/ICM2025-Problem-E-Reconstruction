@@ -14,5 +14,6 @@ CA source n80/3000 defaults remain; exports use new n24/420/seed20251027 choices
 
 Task4 Table5 tolerances reflect displayed rounding, not agricultural accuracy. Corrected max field difference58.2864 is disclosed. historical_*_targets.csv is transcription; full/*_historical_comparison.csv compares NEW assumed results. Top-level earlier status marks exact historical experiments unrecovered. No regression data/R² or historical GA/RNG state is invented.
 
-The public candidate has fresh history and only release_whitelist.csv paths. scripts/verify_public.ps1 scans contents, paths and every commit. Private directories, audits and unknown remotes are excluded. Local release readiness does not authorize uploading.
+The public repository has fresh history and only release_whitelist.csv paths. scripts/verify_public.ps1 scans contents, paths and every commit. Two expressly authorized historical PDFs are checked against exact pinned hashes rather than incorrectly claiming their names/signatures/metadata were removed. All other private directories, audits and binaries remain excluded. After publication, pass -ExpectedOrigin with the explicitly reviewed repository URL so the scanner also verifies fetch/push origin.
+
 

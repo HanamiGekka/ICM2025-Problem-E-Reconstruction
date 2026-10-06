@@ -1,13 +1,25 @@
-param([Parameter(Mandatory=$true)][string]$GitExe,[switch]$BeforeCommit,[string[]]$PrivateTerms=@())
+param([Parameter(Mandatory=$true)][string]$GitExe,[switch]$BeforeCommit,[string[]]$PrivateTerms=@(),[string]$ExpectedOrigin='')
 $ErrorActionPreference='Stop'
 $root=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $allowed=@((Import-Csv -LiteralPath (Join-Path $root 'release_whitelist.csv')).Path)
 if($allowed.Count -ne @($allowed | Sort-Object -Unique).Count){throw 'Duplicate whitelist entries'}
 $forbidden='^(Original|demand|temp|\.work|docs/audit|docs/development)(/|$)|\.(pdf|docx|zip|fig|mat|exe|dll|pfx|pem)$'
-$sensitive='[A-Za-z]:[\\/]|[\p{IsCJKUnifiedIdeographs}]|(?<![A-Za-z0-9.])1[3-9][0-9]{9}(?![A-Za-z0-9.])|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|(?:sk-|ghp_|github_pat_)[A-Za-z0-9_]{16,}'
+$sensitive='(?<![A-Za-z0-9])[A-Za-z]:[\\/]|[\p{IsCJKUnifiedIdeographs}]|(?<![A-Za-z0-9.])1[3-9][0-9]{9}(?![A-Za-z0-9.])|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|(?:sk-|ghp_|github_pat_)[A-Za-z0-9_]{16,}'
 $sensitive+='|'+('-----'+'BEGIN .*PRIVATE KEY'+'-----')
 $extensions=@('.md','.m','.ps1','.csv','.json','.png','.gitignore','')
+# Explicit user-authorized historical copies; never a whole-directory exception.
+$authorizedDocuments=@{
+ 'historical-documents/competition-paper.pdf'='3F3E6D2F76A29596644AD8932BD6CB987D74CA5B871A082233AC3B70F361F808'
+ 'historical-documents/award-certificate.pdf'='EDDB8D05B0AEEAF593566641E6CFB4DFDE9DCCB9B7FDE374EE7220B4002F8556'
+}
 function CheckFile([string]$path,[byte[]]$bytes){
+ if($authorizedDocuments.ContainsKey($path)){
+  if($path -notin $allowed){throw 'Authorized document absent from whitelist'}
+  $sha=[Security.Cryptography.SHA256]::Create()
+  try{$hash=[BitConverter]::ToString($sha.ComputeHash($bytes)).Replace('-','')}finally{$sha.Dispose()}
+  if($hash -ne $authorizedDocuments[$path]){throw "Historical document bytes changed: $path"}
+  return # Names/award signatures/document metadata explicitly authorized only here.
+ }
  if($path -notin $allowed -or $path -match $forbidden){throw "Excluded/unreviewed public path: $path"}
  $extension=[IO.Path]::GetExtension($path)
  if($extension -notin $extensions){throw "Unreviewed file type: $path"}
@@ -63,7 +75,12 @@ foreach($file in $files){
 if(@(Compare-Object ($allowed | Sort-Object) ($paths | Sort-Object)).Count){throw 'Workspace differs from explicit whitelist'}
 Push-Location $root
 try{
- $remote=@(& $GitExe remote); if($remote.Count){throw 'Remote needs explicit review; none expected'}
+ $remote=@(& $GitExe remote)
+ if($remote.Count){
+  if($remote.Count -ne 1 -or $remote[0] -ne 'origin' -or !$ExpectedOrigin){throw 'Supply explicitly reviewed origin'}
+  $fetch=& $GitExe remote get-url origin; $push=& $GitExe remote get-url --push origin
+  if($fetch -ne $ExpectedOrigin -or $push -ne $ExpectedOrigin){throw 'Origin differs from reviewed target'}
+ }
  $tracked=@(& $GitExe ls-files)
  if(!$BeforeCommit -and @(Compare-Object ($allowed | Sort-Object) ($tracked | Sort-Object)).Count){throw 'Tracked files differ from whitelist'}
  $commits=@(& $GitExe rev-list --all)
@@ -72,12 +89,12 @@ try{
   $identity=$identity -replace 'Reconstruction Contributors <reconstruction@invalid>','REVIEWED_GENERIC_IDENTITY'
   if($identity -match $sensitive -or $identity -match '@'){throw 'Unreviewed public commit identity/message'}
   foreach($path in @(& $GitExe ls-tree -r --name-only $commit)){
-   if($path -notin $allowed -or $path -match $forbidden){throw "Excluded file in public history: $path"}
+   if($path -notin $allowed -or ($path -match $forbidden -and !$authorizedDocuments.ContainsKey($path))){throw "Excluded file in public history: $path"}
    CheckFile $path (ReadGitBlob $commit $path)
   }
  }
  if(!$BeforeCommit -and @(& $GitExe status --porcelain).Count){throw 'Public worktree not clean'}
- Write-Output "PUBLIC_SCAN_PASS whitelist=$($allowed.Count) commits=$($commits.Count) private paths/identifiers/credentials absent; no remote"
+ Write-Output "PUBLIC_SCAN_PASS whitelist=$($allowed.Count) commits=$($commits.Count); strict software/data scan; two hash-pinned user-authorized historical PDFs; reviewed origin"
 } finally{Pop-Location}
 
 
