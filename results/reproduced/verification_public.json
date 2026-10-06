@@ -1,0 +1,179 @@
+{
+  "label": "public",
+  "matlab": "23.2.0.2365128 (R2023b)",
+  "batch": true,
+  "passed": 29,
+  "failed": 0,
+  "incomplete": 0,
+  "names": [
+    "test_documented_models/testMissingGate",
+    "test_documented_models/testModelIAlgebra",
+    "test_documented_models/testPeregrineVariants",
+    "test_documented_models/testPollinationVariants",
+    "test_documented_models/testMetricsAndObjective",
+    "test_reconstructed/testProfiles",
+    "test_reconstructed/testModel1EventsAndDeterminism",
+    "test_reconstructed/testSixScenarios",
+    "test_reconstructed/testResolutionAndSensitivity",
+    "test_reconstructed/testOptimizerIndependentGrid",
+    "test_reconstructed/testSixAndSevenSpecies",
+    "test_reconstructed/testModelOptimizers",
+    "test_reconstructed/testSensitivityExports",
+    "test_reconstructed/testParameterBoundsAndUnits",
+    "test_release/testNoPrivateRuntimeDependency",
+    "test_release/testReleaseWhitelist",
+    "test_targets/testTranscription",
+    "test_targets/testSensitivityArithmetic",
+    "test_task4/testCosts",
+    "test_task4/testMetrics",
+    "test_task4/testPareto",
+    "test_task4/testHistoricalScenarios",
+    "test_task4/testCorrectedDifference",
+    "test_task4/testIndependentDominance",
+    "test_task4/testTimestepConvergence",
+    "test_task4/testNeighborhoodAndUpdate",
+    "test_task4/testCARepeatAndSwitches",
+    "test_task4/testCAEventsAndMetricEdges",
+    "test_task4/testRGBNormalization"
+  ],
+  "mode": "public",
+  "historicalHashStatus": "EXCLUDED: public has no Original archive",
+  "static": [
+    {
+      "file": "ca_config.m",
+      "messages": []
+    },
+    {
+      "file": "chemical_fitness.m",
+      "messages": []
+    },
+    {
+      "file": "documented_config.m",
+      "messages": []
+    },
+    {
+      "file": "documented_metrics.m",
+      "messages": []
+    },
+    {
+      "file": "documented_rhs.m",
+      "messages": []
+    },
+    {
+      "file": "ecosystem_metrics.m",
+      "messages": []
+    },
+    {
+      "file": "ecosystem_rgb.m",
+      "messages": []
+    },
+    {
+      "file": "export_ca_scenarios.m",
+      "messages": []
+    },
+    {
+      "file": "export_full_reconstruction.m",
+      "messages": []
+    },
+    {
+      "file": "export_historical_comparison.m",
+      "messages": []
+    },
+    {
+      "file": "export_task4.m",
+      "messages": []
+    },
+    {
+      "file": "farmland_ca_step.m",
+      "messages": []
+    },
+    {
+      "file": "historical_targets.m",
+      "messages": []
+    },
+    {
+      "file": "management_events.m",
+      "messages": []
+    },
+    {
+      "file": "model1_scenarios.m",
+      "messages": []
+    },
+    {
+      "file": "optimize_reconstructed.m",
+      "messages": []
+    },
+    {
+      "file": "organic_cost.m",
+      "messages": []
+    },
+    {
+      "file": "organic_scalar.m",
+      "messages": []
+    },
+    {
+      "file": "organic_scenarios.m",
+      "messages": []
+    },
+    {
+      "file": "pareto_filter.m",
+      "messages": []
+    },
+    {
+      "file": "reconstruction_config.m",
+      "messages": []
+    },
+    {
+      "file": "reconstruction_sensitivity.m",
+      "messages": []
+    },
+    {
+      "file": "run_ca.m",
+      "messages": []
+    },
+    {
+      "file": "sensitivity_arithmetic.m",
+      "messages": []
+    },
+    {
+      "file": "simulate_reconstructed.m",
+      "messages": []
+    },
+    {
+      "file": "task4_config.m",
+      "messages": []
+    },
+    {
+      "file": "verify_exports.m",
+      "messages": []
+    },
+    {
+      "file": "write_json.m",
+      "messages": []
+    },
+    {
+      "file": "run_checks.m",
+      "messages": []
+    },
+    {
+      "file": "test_documented_models.m",
+      "messages": []
+    },
+    {
+      "file": "test_reconstructed.m",
+      "messages": []
+    },
+    {
+      "file": "test_release.m",
+      "messages": []
+    },
+    {
+      "file": "test_targets.m",
+      "messages": []
+    },
+    {
+      "file": "test_task4.m",
+      "messages": []
+    }
+  ]
+}

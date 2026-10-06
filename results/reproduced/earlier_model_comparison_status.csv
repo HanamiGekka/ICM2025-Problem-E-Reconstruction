@@ -1,0 +1,33 @@
+ResultSet,PhaseBefore1After2,Metric,ArchivedValue,RegeneratedValue,AbsoluteDifference,RelativeDifference,Interpretation,Source
+modelIIpaper,1,F,5,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,1,V1,0.0092,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,1,V2,0.0313,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,1,Stability,0.0007,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,1,Crop,354.3522,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,1,Cost,11.716,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,1,Utility,3.0154,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,2,F,5,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,2,V1,0.001,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,2,V2,0.0265,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,2,Stability,0.0037,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,2,Crop,377.8184,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,2,Cost,11.1097,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIpaper,2,Utility,3.0642,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private paper physical p13 Table4
+modelIIalternate,1,V2,0.0296,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model II result notes; alternate result block
+modelIIalternate,1,Stability,0.085,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model II result notes; alternate result block
+modelIIalternate,1,Crop,347.02,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model II result notes; alternate result block
+modelIIalternate,2,V2,0.0224,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model II result notes; alternate result block
+modelIIalternate,2,Stability,0.2571,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model II result notes; alternate result block
+modelIIalternate,2,Crop,374.8967,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model II result notes; alternate result block
+modelIII,1,F,5,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12
+modelIII,1,V2,0.0202,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12
+modelIII,1,Stability,0.0044,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12
+modelIII,1,Crop,346.9684,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12
+modelIII,1,Cost,10.8093,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12
+modelIII,1,Utility,3.0184,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12
+modelIII,2,F,5,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12
+modelIII,2,V2,0.0188,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12
+modelIII,2,Stability,0.0073,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12
+modelIII,2,Crop,354.3383,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12
+modelIII,2,Cost,10.7527,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12
+modelIII,2,Utility,3.0325,NaN,NaN,NaN,EXACT HISTORICAL RUN NOT RECOVERED; separate assumed comparisons in full/,Private Model III result notes; paper physical p17 Figure12

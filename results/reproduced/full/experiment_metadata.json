@@ -1,0 +1,2691 @@
+{
+  "classification": "RECONSTRUCTION WITH ASSUMPTIONS; NOT original competition experiments",
+  "matlab": "23.2.0.2365128 (R2023b)",
+  "rng": "None: deterministic ODE/coordinate/grid search",
+  "historicalTargetsUsedForCalibration": false,
+  "generatedUTC": "2026-10-06 22:15:30",
+  "model1": {
+    "config": {
+      "model": 1,
+      "species": 4,
+      "peregrine": "code_informed",
+      "pollination": "population_coupled",
+      "classification": "RECONSTRUCTION_ASSUMPTION; NOT recovered historical parameters",
+      "source": "Paper physical pp7-8 (5)-(18), p11 (19)-(23), p15 (26)-(27); private notes",
+      "parameters": {
+        "r10": 0.55,
+        "tauF": 0.018,
+        "betaF": 0.08,
+        "A": 0.35,
+        "Ts": 12,
+        "K10": 380,
+        "iota": 0.002,
+        "capacityLambda": 0.012,
+        "r2": 0.65,
+        "K2": 160,
+        "lambda12": 0.0013,
+        "V10": 180,
+        "phi1": 0.12,
+        "r3": 0.045,
+        "K30": 110,
+        "rhoN1": 0.7,
+        "rhoN2": 0.3,
+        "lambda13": 0.00035,
+        "lambda34": 0.0028,
+        "V20": 100,
+        "phi2": 0.1,
+        "gamma4": 0.055,
+        "ti": 0,
+        "F": 5,
+        "V1": 0.02,
+        "V2": 0.02
+      },
+      "stabilityWeights": [
+        0.4,
+        0.3,
+        0.3
+      ],
+      "profile": "reconstructed_baseline",
+      "initial": [
+        180,
+        35,
+        25,
+        18
+      ],
+      "objectiveWeights": [
+        0.25,
+        0.6,
+        0.15
+      ],
+      "lower": [
+        0,
+        0,
+        0
+      ],
+      "upper": [
+        10,
+        0.06,
+        0.06
+      ],
+      "horizon": 36,
+      "outputStep": 0.5,
+      "applicationPeriod": 6,
+      "harvestPeriod": 12,
+      "relTol": 1E-6,
+      "absTol": 1E-8,
+      "maxStep": 0.5,
+      "cropPrice": 0.05,
+      "gridLevels": 4,
+      "searchSweeps": 6,
+      "searchStepFraction": 0.25,
+      "solver": "segmented ode45; projected boundary vector field; right-continuous event outputs",
+      "optimizer": "NEW deterministic baseline-start coordinate search + independent coarse grid; grid refinement if needed",
+      "chemicalScenarios": [
+        [
+          0.035,
+          0.01
+        ],
+        [
+          0.02,
+          0.01
+        ],
+        [
+          0.01,
+          0.01
+        ],
+        [
+          0.02,
+          0.02
+        ],
+        [
+          0.05,
+          0.03
+        ],
+        [
+          0.02,
+          0.005
+        ]
+      ],
+      "scenarioSource": "DOCUMENTED paper physical p9 Figure4; second archived filename conflicts"
+    },
+    "scenarios": [
+      {
+        "F": 5,
+        "V1": 0.035,
+        "V2": 0.01,
+        "Crop": 363.44256974455186,
+        "Stability": 0.41556384528729229,
+        "Diversity": 0.38340368188358237,
+        "Cost": 12.15
+      },
+      {
+        "F": 5,
+        "V1": 0.02,
+        "V2": 0.01,
+        "Crop": 345.90950489104591,
+        "Stability": 0.47838172229102249,
+        "Diversity": 0.43937847362966509,
+        "Cost": 11.4
+      },
+      {
+        "F": 5,
+        "V1": 0.01,
+        "V2": 0.01,
+        "Crop": 336.80097992180424,
+        "Stability": 0.50867702189823472,
+        "Diversity": 0.46580423670328031,
+        "Cost": 10.9
+      },
+      {
+        "F": 5,
+        "V1": 0.02,
+        "V2": 0.02,
+        "Crop": 346.45549689628047,
+        "Stability": 0.45127729979224085,
+        "Diversity": 0.41572923808065365,
+        "Cost": 11.8
+      },
+      {
+        "F": 5,
+        "V1": 0.05,
+        "V2": 0.03,
+        "Crop": 366.70652148223922,
+        "Stability": 0.32226089686167259,
+        "Diversity": 0.30045969801624817,
+        "Cost": 13.7
+      },
+      {
+        "F": 5,
+        "V1": 0.02,
+        "V2": 0.005,
+        "Crop": 345.70270996194904,
+        "Stability": 0.48898126008939968,
+        "Diversity": 0.44844064795719796,
+        "Cost": 11.2
+      }
+    ],
+    "normalization": "each column divided by maximum across six scenarios"
+  },
+  "model2": {
+    "config": {
+      "model": 2,
+      "species": 6,
+      "peregrine": "code_informed",
+      "pollination": "population_coupled",
+      "classification": "RECONSTRUCTION_ASSUMPTION; NOT recovered historical parameters",
+      "source": "Paper physical pp7-8 (5)-(18), p11 (19)-(23), p15 (26)-(27); private notes",
+      "parameters": {
+        "r10": 0.55,
+        "tauF": 0.018,
+        "betaF": 0.08,
+        "A": 0.35,
+        "Ts": 12,
+        "K10": 380,
+        "iota": 0.002,
+        "capacityLambda": 0.012,
+        "r2": 0.65,
+        "K2": 160,
+        "lambda12": 0.0013,
+        "V10": 180,
+        "phi1": 0.12,
+        "r3": 0.045,
+        "K30": 110,
+        "rhoN1": 0.7,
+        "rhoN2": 0.3,
+        "lambda13": 0.00035,
+        "lambda34": 0.0028,
+        "V20": 100,
+        "phi2": 0.1,
+        "ti": 0,
+        "F": 5,
+        "V1": 0.02,
+        "V2": 0.02,
+        "r4": 0.18,
+        "K4": 90,
+        "r5": 0.035,
+        "K5": 115,
+        "lambda15": 0.0003,
+        "lambda35": 0.0016,
+        "lambda46": 0.0018,
+        "gamma6": 0.08
+      },
+      "stabilityWeights": [
+        0.4,
+        0.3,
+        0.3
+      ],
+      "profile": "reconstructed_baseline",
+      "initial": [
+        180,
+        35,
+        25,
+        18,
+        16,
+        8
+      ],
+      "objectiveWeights": [
+        0.25,
+        0.6,
+        0.15
+      ],
+      "lower": [
+        0,
+        0,
+        0
+      ],
+      "upper": [
+        10,
+        0.06,
+        0.06
+      ],
+      "horizon": 36,
+      "outputStep": 0.5,
+      "applicationPeriod": 6,
+      "harvestPeriod": 12,
+      "relTol": 1E-6,
+      "absTol": 1E-8,
+      "maxStep": 0.5,
+      "cropPrice": 0.05,
+      "gridLevels": 4,
+      "searchSweeps": 6,
+      "searchStepFraction": 0.25,
+      "solver": "segmented ode45; projected boundary vector field; right-continuous event outputs",
+      "optimizer": "NEW deterministic baseline-start coordinate search + independent coarse grid; grid refinement if needed",
+      "chemicalScenarios": [
+        [
+          0.035,
+          0.01
+        ],
+        [
+          0.02,
+          0.01
+        ],
+        [
+          0.01,
+          0.01
+        ],
+        [
+          0.02,
+          0.02
+        ],
+        [
+          0.05,
+          0.03
+        ],
+        [
+          0.02,
+          0.005
+        ]
+      ],
+      "scenarioSource": "DOCUMENTED paper physical p9 Figure4; second archived filename conflicts"
+    },
+    "optimization": {
+      "decision": [
+        0,
+        0,
+        0
+      ],
+      "fitness": 1.6692540545297023,
+      "coordinateDecision": [
+        0.078125,
+        0.028437499999999998,
+        0
+      ],
+      "coordinateFitness": 1.5844274102804372,
+      "gridDecision": [
+        0,
+        0,
+        0
+      ],
+      "gridFitness": 1.6692540545297023,
+      "improvementOverGrid": 0,
+      "evaluationCount": 105,
+      "grid": [
+        {
+          "F": 0,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.6692540545297023
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.48480962980498
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.445691606437016
+        },
+        {
+          "F": 10,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.4241744899475075
+        },
+        {
+          "F": 0,
+          "V1": 0.02,
+          "V2": 0,
+          "Fitness": 1.5891602049113194
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.02,
+          "V2": 0,
+          "Fitness": 1.4857332295079528
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.02,
+          "V2": 0,
+          "Fitness": 1.4530384636749643
+        },
+        {
+          "F": 10,
+          "V1": 0.02,
+          "V2": 0,
+          "Fitness": 1.4334345066171827
+        },
+        {
+          "F": 0,
+          "V1": 0.04,
+          "V2": 0,
+          "Fitness": 1.5696723650560609
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.04,
+          "V2": 0,
+          "Fitness": 1.4969437120117441
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.04,
+          "V2": 0,
+          "Fitness": 1.4642244554404855
+        },
+        {
+          "F": 10,
+          "V1": 0.04,
+          "V2": 0,
+          "Fitness": 1.4425561299580654
+        },
+        {
+          "F": 0,
+          "V1": 0.06,
+          "V2": 0,
+          "Fitness": 1.5317118092240933
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.06,
+          "V2": 0,
+          "Fitness": 1.4850966697081398
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.06,
+          "V2": 0,
+          "Fitness": 1.4572797226863097
+        },
+        {
+          "F": 10,
+          "V1": 0.06,
+          "V2": 0,
+          "Fitness": 1.4375149122923716
+        },
+        {
+          "F": 0,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.6141343519089602
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.4868792701645543
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.4486019051485843
+        },
+        {
+          "F": 10,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.4259808492592596
+        },
+        {
+          "F": 0,
+          "V1": 0.02,
+          "V2": 0.02,
+          "Fitness": 1.5732272015363342
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.02,
+          "V2": 0.02,
+          "Fitness": 1.489191581128638
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.02,
+          "V2": 0.02,
+          "Fitness": 1.4553586285815043
+        },
+        {
+          "F": 10,
+          "V1": 0.02,
+          "V2": 0.02,
+          "Fitness": 1.4337622078034868
+        },
+        {
+          "F": 0,
+          "V1": 0.04,
+          "V2": 0.02,
+          "Fitness": 1.5626576895962074
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.04,
+          "V2": 0.02,
+          "Fitness": 1.4948893494065318
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.04,
+          "V2": 0.02,
+          "Fitness": 1.4604693325969165
+        },
+        {
+          "F": 10,
+          "V1": 0.04,
+          "V2": 0.02,
+          "Fitness": 1.4371396511951557
+        },
+        {
+          "F": 0,
+          "V1": 0.06,
+          "V2": 0.02,
+          "Fitness": 1.5321454543679007
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.06,
+          "V2": 0.02,
+          "Fitness": 1.4840390465112416
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.06,
+          "V2": 0.02,
+          "Fitness": 1.4539525064511829
+        },
+        {
+          "F": 10,
+          "V1": 0.06,
+          "V2": 0.02,
+          "Fitness": 1.4323638261167977
+        },
+        {
+          "F": 0,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.5674485744839486
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.4725180117432053
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.4359736631456377
+        },
+        {
+          "F": 10,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.4127861254210028
+        },
+        {
+          "F": 0,
+          "V1": 0.02,
+          "V2": 0.04,
+          "Fitness": 1.5462261966855357
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.02,
+          "V2": 0.04,
+          "Fitness": 1.4755277662869584
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.02,
+          "V2": 0.04,
+          "Fitness": 1.4409661639853728
+        },
+        {
+          "F": 10,
+          "V1": 0.02,
+          "V2": 0.04,
+          "Fitness": 1.417272094263557
+        },
+        {
+          "F": 0,
+          "V1": 0.04,
+          "V2": 0.04,
+          "Fitness": 1.5437893330871582
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.04,
+          "V2": 0.04,
+          "Fitness": 1.4781850123149161
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.04,
+          "V2": 0.04,
+          "Fitness": 1.4414173665147554
+        },
+        {
+          "F": 10,
+          "V1": 0.04,
+          "V2": 0.04,
+          "Fitness": 1.4156799849559087
+        },
+        {
+          "F": 0,
+          "V1": 0.06,
+          "V2": 0.04,
+          "Fitness": 1.519502404627155
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.06,
+          "V2": 0.04,
+          "Fitness": 1.4679818900466888
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.06,
+          "V2": 0.04,
+          "Fitness": 1.4347100879922232
+        },
+        {
+          "F": 10,
+          "V1": 0.06,
+          "V2": 0.04,
+          "Fitness": 1.4104414596700074
+        },
+        {
+          "F": 0,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.5284824487467312
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.4590710472880051
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.4266985571525672
+        },
+        {
+          "F": 10,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.4050674448735267
+        },
+        {
+          "F": 0,
+          "V1": 0.02,
+          "V2": 0.06,
+          "Fitness": 1.5177371643932263
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.02,
+          "V2": 0.06,
+          "Fitness": 1.4632856628986617
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.02,
+          "V2": 0.06,
+          "Fitness": 1.4319738720880082
+        },
+        {
+          "F": 10,
+          "V1": 0.02,
+          "V2": 0.06,
+          "Fitness": 1.4094746089976085
+        },
+        {
+          "F": 0,
+          "V1": 0.04,
+          "V2": 0.06,
+          "Fitness": 1.5207438191491611
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.04,
+          "V2": 0.06,
+          "Fitness": 1.4662351760395089
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.04,
+          "V2": 0.06,
+          "Fitness": 1.4321023736236298
+        },
+        {
+          "F": 10,
+          "V1": 0.04,
+          "V2": 0.06,
+          "Fitness": 1.4073992315853527
+        },
+        {
+          "F": 0,
+          "V1": 0.06,
+          "V2": 0.06,
+          "Fitness": 1.5004011570158959
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0.06,
+          "V2": 0.06,
+          "Fitness": 1.4566902968854178
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0.06,
+          "V2": 0.06,
+          "Fitness": 1.4255415685312574
+        },
+        {
+          "F": 10,
+          "V1": 0.06,
+          "V2": 0.06,
+          "Fitness": 1.4021344039613104
+        }
+      ],
+      "config": {
+        "model": 2,
+        "species": 6,
+        "peregrine": "code_informed",
+        "pollination": "population_coupled",
+        "classification": "RECONSTRUCTION_ASSUMPTION; NOT recovered historical parameters",
+        "source": "Paper physical pp7-8 (5)-(18), p11 (19)-(23), p15 (26)-(27); private notes",
+        "parameters": {
+          "r10": 0.55,
+          "tauF": 0.018,
+          "betaF": 0.08,
+          "A": 0.35,
+          "Ts": 12,
+          "K10": 380,
+          "iota": 0.002,
+          "capacityLambda": 0.012,
+          "r2": 0.65,
+          "K2": 160,
+          "lambda12": 0.0013,
+          "V10": 180,
+          "phi1": 0.12,
+          "r3": 0.045,
+          "K30": 110,
+          "rhoN1": 0.7,
+          "rhoN2": 0.3,
+          "lambda13": 0.00035,
+          "lambda34": 0.0028,
+          "V20": 100,
+          "phi2": 0.1,
+          "ti": 0,
+          "F": 5,
+          "V1": 0.02,
+          "V2": 0.02,
+          "r4": 0.18,
+          "K4": 90,
+          "r5": 0.035,
+          "K5": 115,
+          "lambda15": 0.0003,
+          "lambda35": 0.0016,
+          "lambda46": 0.0018,
+          "gamma6": 0.08
+        },
+        "stabilityWeights": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "profile": "reconstructed_baseline",
+        "initial": [
+          180,
+          35,
+          25,
+          18,
+          16,
+          8
+        ],
+        "objectiveWeights": [
+          0.25,
+          0.6,
+          0.15
+        ],
+        "lower": [
+          0,
+          0,
+          0
+        ],
+        "upper": [
+          10,
+          0.06,
+          0.06
+        ],
+        "horizon": 36,
+        "outputStep": 0.5,
+        "applicationPeriod": 6,
+        "harvestPeriod": 12,
+        "relTol": 1E-6,
+        "absTol": 1E-8,
+        "maxStep": 0.5,
+        "cropPrice": 0.05,
+        "gridLevels": 4,
+        "searchSweeps": 6,
+        "searchStepFraction": 0.25,
+        "solver": "segmented ode45; projected boundary vector field; right-continuous event outputs",
+        "optimizer": "NEW deterministic baseline-start coordinate search + independent coarse grid; grid refinement if needed",
+        "chemicalScenarios": [
+          [
+            0.035,
+            0.01
+          ],
+          [
+            0.02,
+            0.01
+          ],
+          [
+            0.01,
+            0.01
+          ],
+          [
+            0.02,
+            0.02
+          ],
+          [
+            0.05,
+            0.03
+          ],
+          [
+            0.02,
+            0.005
+          ]
+        ],
+        "scenarioSource": "DOCUMENTED paper physical p9 Figure4; second archived filename conflicts"
+      },
+      "algorithm": "NEW bounded coordinate search + independent Cartesian grid; no RNG",
+      "history": [
+        {
+          "Evaluation": 1,
+          "F": 5,
+          "V1": 0.02,
+          "V2": 0.02,
+          "Fitness": 1.4699332774551532,
+          "BestFitness": 1.4699332774551532,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 2,
+          "F": 2.5,
+          "V1": 0.02,
+          "V2": 0.02,
+          "Fitness": 1.5017618462521583,
+          "BestFitness": 1.5017618462521583,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 3,
+          "F": 2.5,
+          "V1": 0.005000000000000001,
+          "V2": 0.02,
+          "Fitness": 1.5006214062740808,
+          "BestFitness": 1.5017618462521583,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 4,
+          "F": 2.5,
+          "V1": 0.035,
+          "V2": 0.02,
+          "Fitness": 1.5099066737356741,
+          "BestFitness": 1.5099066737356741,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 5,
+          "F": 2.5,
+          "V1": 0.035,
+          "V2": 0.005000000000000001,
+          "Fitness": 1.5107853831089264,
+          "BestFitness": 1.5107853831089264,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 6,
+          "F": 1.25,
+          "V1": 0.035,
+          "V2": 0.005000000000000001,
+          "Fitness": 1.5345793083134447,
+          "BestFitness": 1.5345793083134447,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 7,
+          "F": 1.25,
+          "V1": 0.027500000000000004,
+          "V2": 0.005000000000000001,
+          "Fitness": 1.5365258792243832,
+          "BestFitness": 1.5365258792243832,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 8,
+          "F": 1.25,
+          "V1": 0.027500000000000004,
+          "V2": 0,
+          "Fitness": 1.5383466363624321,
+          "BestFitness": 1.5383466363624321,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 9,
+          "F": 1.25,
+          "V1": 0.027500000000000004,
+          "V2": 0.0075,
+          "Fitness": 1.5358691025063516,
+          "BestFitness": 1.5383466363624321,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 10,
+          "F": 0.625,
+          "V1": 0.027500000000000004,
+          "V2": 0,
+          "Fitness": 1.557799976129332,
+          "BestFitness": 1.557799976129332,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 11,
+          "F": 0.625,
+          "V1": 0.023750000000000004,
+          "V2": 0,
+          "Fitness": 1.5500934678566605,
+          "BestFitness": 1.557799976129332,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 12,
+          "F": 0.625,
+          "V1": 0.03125,
+          "V2": 0,
+          "Fitness": 1.557894030873884,
+          "BestFitness": 1.557894030873884,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 13,
+          "F": 0.625,
+          "V1": 0.03125,
+          "V2": 0.00375,
+          "Fitness": 1.5551190638225816,
+          "BestFitness": 1.557894030873884,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 14,
+          "F": 0.3125,
+          "V1": 0.03125,
+          "V2": 0,
+          "Fitness": 1.5703402246093667,
+          "BestFitness": 1.5703402246093667,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 15,
+          "F": 0.3125,
+          "V1": 0.029375,
+          "V2": 0,
+          "Fitness": 1.5717415165053472,
+          "BestFitness": 1.5717415165053472,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 16,
+          "F": 0.3125,
+          "V1": 0.029375,
+          "V2": 0.001875,
+          "Fitness": 1.5697759443907346,
+          "BestFitness": 1.5717415165053472,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 17,
+          "F": 0.15625,
+          "V1": 0.029375,
+          "V2": 0,
+          "Fitness": 1.5795169684450516,
+          "BestFitness": 1.5795169684450516,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 18,
+          "F": 0.15625,
+          "V1": 0.028437499999999998,
+          "V2": 0,
+          "Fitness": 1.5800352388090573,
+          "BestFitness": 1.5800352388090573,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 19,
+          "F": 0.15625,
+          "V1": 0.028437499999999998,
+          "V2": 0.0009375,
+          "Fitness": 1.5788885292700117,
+          "BestFitness": 1.5800352388090573,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 20,
+          "F": 0.078125,
+          "V1": 0.028437499999999998,
+          "V2": 0,
+          "Fitness": 1.5844274102804372,
+          "BestFitness": 1.5844274102804372,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 21,
+          "F": 0.078125,
+          "V1": 0.027968749999999997,
+          "V2": 0,
+          "Fitness": 1.5840912945352721,
+          "BestFitness": 1.5844274102804372,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 22,
+          "F": 0.078125,
+          "V1": 0.028906249999999998,
+          "V2": 0,
+          "Fitness": 1.5842249446556356,
+          "BestFitness": 1.5844274102804372,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 23,
+          "F": 0.078125,
+          "V1": 0.028437499999999998,
+          "V2": 0.00046875,
+          "Fitness": 1.5837994467458385,
+          "BestFitness": 1.5844274102804372,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 24,
+          "F": 0,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.6692540545297023,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 25,
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.48480962980498,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 26,
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.445691606437016,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 27,
+          "F": 10,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.4241744899475075,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 28,
+          "F": 0,
+          "V1": 0.02,
+          "V2": 0,
+          "Fitness": 1.5891602049113194,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 29,
+          "F": 3.3333333333333335,
+          "V1": 0.02,
+          "V2": 0,
+          "Fitness": 1.4857332295079528,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 30,
+          "F": 6.666666666666667,
+          "V1": 0.02,
+          "V2": 0,
+          "Fitness": 1.4530384636749643,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 31,
+          "F": 10,
+          "V1": 0.02,
+          "V2": 0,
+          "Fitness": 1.4334345066171827,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 32,
+          "F": 0,
+          "V1": 0.04,
+          "V2": 0,
+          "Fitness": 1.5696723650560609,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 33,
+          "F": 3.3333333333333335,
+          "V1": 0.04,
+          "V2": 0,
+          "Fitness": 1.4969437120117441,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 34,
+          "F": 6.666666666666667,
+          "V1": 0.04,
+          "V2": 0,
+          "Fitness": 1.4642244554404855,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 35,
+          "F": 10,
+          "V1": 0.04,
+          "V2": 0,
+          "Fitness": 1.4425561299580654,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 36,
+          "F": 0,
+          "V1": 0.06,
+          "V2": 0,
+          "Fitness": 1.5317118092240933,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 37,
+          "F": 3.3333333333333335,
+          "V1": 0.06,
+          "V2": 0,
+          "Fitness": 1.4850966697081398,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 38,
+          "F": 6.666666666666667,
+          "V1": 0.06,
+          "V2": 0,
+          "Fitness": 1.4572797226863097,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 39,
+          "F": 10,
+          "V1": 0.06,
+          "V2": 0,
+          "Fitness": 1.4375149122923716,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 40,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.6141343519089602,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 41,
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.4868792701645543,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 42,
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.4486019051485843,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 43,
+          "F": 10,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.4259808492592596,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 44,
+          "F": 0,
+          "V1": 0.02,
+          "V2": 0.02,
+          "Fitness": 1.5732272015363342,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 45,
+          "F": 3.3333333333333335,
+          "V1": 0.02,
+          "V2": 0.02,
+          "Fitness": 1.489191581128638,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 46,
+          "F": 6.666666666666667,
+          "V1": 0.02,
+          "V2": 0.02,
+          "Fitness": 1.4553586285815043,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 47,
+          "F": 10,
+          "V1": 0.02,
+          "V2": 0.02,
+          "Fitness": 1.4337622078034868,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 48,
+          "F": 0,
+          "V1": 0.04,
+          "V2": 0.02,
+          "Fitness": 1.5626576895962074,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 49,
+          "F": 3.3333333333333335,
+          "V1": 0.04,
+          "V2": 0.02,
+          "Fitness": 1.4948893494065318,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 50,
+          "F": 6.666666666666667,
+          "V1": 0.04,
+          "V2": 0.02,
+          "Fitness": 1.4604693325969165,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 51,
+          "F": 10,
+          "V1": 0.04,
+          "V2": 0.02,
+          "Fitness": 1.4371396511951557,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 52,
+          "F": 0,
+          "V1": 0.06,
+          "V2": 0.02,
+          "Fitness": 1.5321454543679007,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 53,
+          "F": 3.3333333333333335,
+          "V1": 0.06,
+          "V2": 0.02,
+          "Fitness": 1.4840390465112416,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 54,
+          "F": 6.666666666666667,
+          "V1": 0.06,
+          "V2": 0.02,
+          "Fitness": 1.4539525064511829,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 55,
+          "F": 10,
+          "V1": 0.06,
+          "V2": 0.02,
+          "Fitness": 1.4323638261167977,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 56,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.5674485744839486,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 57,
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.4725180117432053,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 58,
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.4359736631456377,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 59,
+          "F": 10,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.4127861254210028,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 60,
+          "F": 0,
+          "V1": 0.02,
+          "V2": 0.04,
+          "Fitness": 1.5462261966855357,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 61,
+          "F": 3.3333333333333335,
+          "V1": 0.02,
+          "V2": 0.04,
+          "Fitness": 1.4755277662869584,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 62,
+          "F": 6.666666666666667,
+          "V1": 0.02,
+          "V2": 0.04,
+          "Fitness": 1.4409661639853728,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 63,
+          "F": 10,
+          "V1": 0.02,
+          "V2": 0.04,
+          "Fitness": 1.417272094263557,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 64,
+          "F": 0,
+          "V1": 0.04,
+          "V2": 0.04,
+          "Fitness": 1.5437893330871582,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 65,
+          "F": 3.3333333333333335,
+          "V1": 0.04,
+          "V2": 0.04,
+          "Fitness": 1.4781850123149161,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 66,
+          "F": 6.666666666666667,
+          "V1": 0.04,
+          "V2": 0.04,
+          "Fitness": 1.4414173665147554,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 67,
+          "F": 10,
+          "V1": 0.04,
+          "V2": 0.04,
+          "Fitness": 1.4156799849559087,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 68,
+          "F": 0,
+          "V1": 0.06,
+          "V2": 0.04,
+          "Fitness": 1.519502404627155,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 69,
+          "F": 3.3333333333333335,
+          "V1": 0.06,
+          "V2": 0.04,
+          "Fitness": 1.4679818900466888,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 70,
+          "F": 6.666666666666667,
+          "V1": 0.06,
+          "V2": 0.04,
+          "Fitness": 1.4347100879922232,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 71,
+          "F": 10,
+          "V1": 0.06,
+          "V2": 0.04,
+          "Fitness": 1.4104414596700074,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 72,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.5284824487467312,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 73,
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.4590710472880051,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 74,
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.4266985571525672,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 75,
+          "F": 10,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.4050674448735267,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 76,
+          "F": 0,
+          "V1": 0.02,
+          "V2": 0.06,
+          "Fitness": 1.5177371643932263,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 77,
+          "F": 3.3333333333333335,
+          "V1": 0.02,
+          "V2": 0.06,
+          "Fitness": 1.4632856628986617,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 78,
+          "F": 6.666666666666667,
+          "V1": 0.02,
+          "V2": 0.06,
+          "Fitness": 1.4319738720880082,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 79,
+          "F": 10,
+          "V1": 0.02,
+          "V2": 0.06,
+          "Fitness": 1.4094746089976085,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 80,
+          "F": 0,
+          "V1": 0.04,
+          "V2": 0.06,
+          "Fitness": 1.5207438191491611,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 81,
+          "F": 3.3333333333333335,
+          "V1": 0.04,
+          "V2": 0.06,
+          "Fitness": 1.4662351760395089,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 82,
+          "F": 6.666666666666667,
+          "V1": 0.04,
+          "V2": 0.06,
+          "Fitness": 1.4321023736236298,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 83,
+          "F": 10,
+          "V1": 0.04,
+          "V2": 0.06,
+          "Fitness": 1.4073992315853527,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 84,
+          "F": 0,
+          "V1": 0.06,
+          "V2": 0.06,
+          "Fitness": 1.5004011570158959,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 85,
+          "F": 3.3333333333333335,
+          "V1": 0.06,
+          "V2": 0.06,
+          "Fitness": 1.4566902968854178,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 86,
+          "F": 6.666666666666667,
+          "V1": 0.06,
+          "V2": 0.06,
+          "Fitness": 1.4255415685312574,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 87,
+          "F": 10,
+          "V1": 0.06,
+          "V2": 0.06,
+          "Fitness": 1.4021344039613104,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 88,
+          "F": 2.5,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.5018468827360945,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 89,
+          "F": 0,
+          "V1": 0.015,
+          "V2": 0,
+          "Fitness": 1.60133203263663,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 90,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.015,
+          "Fitness": 1.6198103606018996,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 91,
+          "F": 1.25,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.5436740809508345,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 92,
+          "F": 0,
+          "V1": 0.0075,
+          "V2": 0,
+          "Fitness": 1.6286353023843816,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 93,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.0075,
+          "Fitness": 1.6386912811983221,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 94,
+          "F": 0.625,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.5832266556545964,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 95,
+          "F": 0,
+          "V1": 0.00375,
+          "V2": 0,
+          "Fitness": 1.6468972063427079,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 96,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.00375,
+          "Fitness": 1.6523724651468137,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 97,
+          "F": 0.3125,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.6156800165995446,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 98,
+          "F": 0,
+          "V1": 0.001875,
+          "V2": 0,
+          "Fitness": 1.6574889325065467,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 99,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.001875,
+          "Fitness": 1.6603797639091888,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 100,
+          "F": 0.15625,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.6385104503605064,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 101,
+          "F": 0,
+          "V1": 0.0009375,
+          "V2": 0,
+          "Fitness": 1.6632130662401656,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 102,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.0009375,
+          "Fitness": 1.6647040581231443,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 103,
+          "F": 0.078125,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.6526139982671058,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 104,
+          "F": 0,
+          "V1": 0.00046875,
+          "V2": 0,
+          "Fitness": 1.6661922970467586,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 105,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.00046875,
+          "Fitness": 1.6669506529474731,
+          "BestFitness": 1.6692540545297023,
+          "Phase": "grid_refinement"
+        }
+      ]
+    },
+    "comparison": [
+      {
+        "F": 5,
+        "V1": 0.02,
+        "V2": 0.02,
+        "Crop": 348.00202609978521,
+        "Stability": 0.52157411907195872,
+        "Cost": 11.8,
+        "Utility": 1.4699332774551532
+      },
+      {
+        "F": 0,
+        "V1": 0,
+        "V2": 0,
+        "Crop": 303.05492798205552,
+        "Stability": 0,
+        "Cost": 0,
+        "Utility": 1.6692540545297023
+      }
+    ],
+    "structuralVariants": [
+      {
+        "Variant": "principal",
+        "Crop": 348.00202609978521,
+        "Stability": 0.52157411907195872,
+        "Diversity": 0.48048862910720186
+      },
+      {
+        "Variant": "paper_literal",
+        "Crop": 348.10683010895974,
+        "Stability": 0.542505398404176,
+        "Diversity": 0.49977110755857118
+      }
+    ]
+  },
+  "model3": {
+    "config": {
+      "model": 3,
+      "species": 7,
+      "peregrine": "code_informed",
+      "pollination": "population_coupled",
+      "classification": "RECONSTRUCTION_ASSUMPTION; NOT recovered historical parameters",
+      "source": "Paper physical pp7-8 (5)-(18), p11 (19)-(23), p15 (26)-(27); private notes",
+      "parameters": {
+        "r10": 0.55,
+        "tauF": 0.018,
+        "betaF": 0.08,
+        "A": 0.35,
+        "Ts": 12,
+        "K10": 380,
+        "iota": 0.002,
+        "capacityLambda": 0.012,
+        "r2": 0.65,
+        "K2": 160,
+        "lambda12": 0.0013,
+        "r3": 0.045,
+        "K30": 110,
+        "rhoN1": 0.7,
+        "rhoN2": 0.3,
+        "lambda13": 0.00035,
+        "lambda34": 0.0028,
+        "V20": 100,
+        "phi2": 0.1,
+        "ti": 0,
+        "F": 5,
+        "V1": 0,
+        "V2": 0.02,
+        "r4": 0.18,
+        "K4": 90,
+        "r5": 0.035,
+        "K5": 115,
+        "lambda15": 0.0003,
+        "lambda35": 0.0016,
+        "lambda46": 0.0018,
+        "gamma6": 0.08,
+        "tauN4": 0.0008,
+        "tauN7": 0.0012,
+        "betaN4": 0.06,
+        "betaN7": 0.06,
+        "r7": 0.16,
+        "K7": 85
+      },
+      "stabilityWeights": [
+        0.4,
+        0.3,
+        0.3
+      ],
+      "profile": "reconstructed_baseline",
+      "initial": [
+        180,
+        35,
+        25,
+        18,
+        16,
+        8,
+        40
+      ],
+      "objectiveWeights": [
+        0.25,
+        0.6,
+        0.15
+      ],
+      "lower": [
+        0,
+        0,
+        0
+      ],
+      "upper": [
+        10,
+        0,
+        0.06
+      ],
+      "horizon": 36,
+      "outputStep": 0.5,
+      "applicationPeriod": 6,
+      "harvestPeriod": 12,
+      "relTol": 1E-6,
+      "absTol": 1E-8,
+      "maxStep": 0.5,
+      "cropPrice": 0.05,
+      "gridLevels": 4,
+      "searchSweeps": 6,
+      "searchStepFraction": 0.25,
+      "solver": "segmented ode45; projected boundary vector field; right-continuous event outputs",
+      "optimizer": "NEW deterministic baseline-start coordinate search + independent coarse grid; grid refinement if needed",
+      "chemicalScenarios": [
+        [
+          0.035,
+          0.01
+        ],
+        [
+          0.02,
+          0.01
+        ],
+        [
+          0.01,
+          0.01
+        ],
+        [
+          0.02,
+          0.02
+        ],
+        [
+          0.05,
+          0.03
+        ],
+        [
+          0.02,
+          0.005
+        ]
+      ],
+      "scenarioSource": "DOCUMENTED paper physical p9 Figure4; second archived filename conflicts"
+    },
+    "optimization": {
+      "decision": [
+        0,
+        0,
+        0
+      ],
+      "fitness": 1.7049920400247291,
+      "coordinateDecision": [
+        0.078125,
+        0,
+        0.0054687500000000014
+      ],
+      "coordinateFitness": 1.6674648675986141,
+      "gridDecision": [
+        0,
+        0,
+        0
+      ],
+      "gridFitness": 1.7049920400247291,
+      "improvementOverGrid": 0,
+      "evaluationCount": 43,
+      "grid": [
+        {
+          "F": 0,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.7049920400247291
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.5228753422120695
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.4819811269356828
+        },
+        {
+          "F": 10,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.4585163082748422
+        },
+        {
+          "F": 0,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.6438308528621155
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.5243816524542106
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.4863444657697666
+        },
+        {
+          "F": 10,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.4629593040197557
+        },
+        {
+          "F": 0,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.596854712206885
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.5118414315239614
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.4769551105517946
+        },
+        {
+          "F": 10,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.4541526197406263
+        },
+        {
+          "F": 0,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.5574600981208857
+        },
+        {
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.4985412702012508
+        },
+        {
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.468123129870194
+        },
+        {
+          "F": 10,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.4470863410289112
+        }
+      ],
+      "config": {
+        "model": 3,
+        "species": 7,
+        "peregrine": "code_informed",
+        "pollination": "population_coupled",
+        "classification": "RECONSTRUCTION_ASSUMPTION; NOT recovered historical parameters",
+        "source": "Paper physical pp7-8 (5)-(18), p11 (19)-(23), p15 (26)-(27); private notes",
+        "parameters": {
+          "r10": 0.55,
+          "tauF": 0.018,
+          "betaF": 0.08,
+          "A": 0.35,
+          "Ts": 12,
+          "K10": 380,
+          "iota": 0.002,
+          "capacityLambda": 0.012,
+          "r2": 0.65,
+          "K2": 160,
+          "lambda12": 0.0013,
+          "r3": 0.045,
+          "K30": 110,
+          "rhoN1": 0.7,
+          "rhoN2": 0.3,
+          "lambda13": 0.00035,
+          "lambda34": 0.0028,
+          "V20": 100,
+          "phi2": 0.1,
+          "ti": 0,
+          "F": 5,
+          "V1": 0,
+          "V2": 0.02,
+          "r4": 0.18,
+          "K4": 90,
+          "r5": 0.035,
+          "K5": 115,
+          "lambda15": 0.0003,
+          "lambda35": 0.0016,
+          "lambda46": 0.0018,
+          "gamma6": 0.08,
+          "tauN4": 0.0008,
+          "tauN7": 0.0012,
+          "betaN4": 0.06,
+          "betaN7": 0.06,
+          "r7": 0.16,
+          "K7": 85
+        },
+        "stabilityWeights": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "profile": "reconstructed_baseline",
+        "initial": [
+          180,
+          35,
+          25,
+          18,
+          16,
+          8,
+          40
+        ],
+        "objectiveWeights": [
+          0.25,
+          0.6,
+          0.15
+        ],
+        "lower": [
+          0,
+          0,
+          0
+        ],
+        "upper": [
+          10,
+          0,
+          0.06
+        ],
+        "horizon": 36,
+        "outputStep": 0.5,
+        "applicationPeriod": 6,
+        "harvestPeriod": 12,
+        "relTol": 1E-6,
+        "absTol": 1E-8,
+        "maxStep": 0.5,
+        "cropPrice": 0.05,
+        "gridLevels": 4,
+        "searchSweeps": 6,
+        "searchStepFraction": 0.25,
+        "solver": "segmented ode45; projected boundary vector field; right-continuous event outputs",
+        "optimizer": "NEW deterministic baseline-start coordinate search + independent coarse grid; grid refinement if needed",
+        "chemicalScenarios": [
+          [
+            0.035,
+            0.01
+          ],
+          [
+            0.02,
+            0.01
+          ],
+          [
+            0.01,
+            0.01
+          ],
+          [
+            0.02,
+            0.02
+          ],
+          [
+            0.05,
+            0.03
+          ],
+          [
+            0.02,
+            0.005
+          ]
+        ],
+        "scenarioSource": "DOCUMENTED paper physical p9 Figure4; second archived filename conflicts"
+      },
+      "algorithm": "NEW bounded coordinate search + independent Cartesian grid; no RNG",
+      "history": [
+        {
+          "Evaluation": 1,
+          "F": 5,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.5024655377820257,
+          "BestFitness": 1.5024655377820257,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 2,
+          "F": 2.5,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.5392392042773122,
+          "BestFitness": 1.5392392042773122,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 3,
+          "F": 2.5,
+          "V1": 0,
+          "V2": 0.005000000000000001,
+          "Fitness": 1.5384470573154181,
+          "BestFitness": 1.5392392042773122,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 4,
+          "F": 2.5,
+          "V1": 0,
+          "V2": 0.035,
+          "Fitness": 1.5287572856282188,
+          "BestFitness": 1.5392392042773122,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 5,
+          "F": 1.25,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.5718734247564921,
+          "BestFitness": 1.5718734247564921,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 6,
+          "F": 1.25,
+          "V1": 0,
+          "V2": 0.0125,
+          "Fitness": 1.5724860975310506,
+          "BestFitness": 1.5724860975310506,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 7,
+          "F": 0.625,
+          "V1": 0,
+          "V2": 0.0125,
+          "Fitness": 1.6022468992591914,
+          "BestFitness": 1.6022468992591914,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 8,
+          "F": 0.625,
+          "V1": 0,
+          "V2": 0.00875,
+          "Fitness": 1.6064171479518163,
+          "BestFitness": 1.6064171479518163,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 9,
+          "F": 0.3125,
+          "V1": 0,
+          "V2": 0.00875,
+          "Fitness": 1.6310584017820857,
+          "BestFitness": 1.6310584017820857,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 10,
+          "F": 0.3125,
+          "V1": 0,
+          "V2": 0.0068750000000000009,
+          "Fitness": 1.6349046376146155,
+          "BestFitness": 1.6349046376146155,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 11,
+          "F": 0.15625,
+          "V1": 0,
+          "V2": 0.0068750000000000009,
+          "Fitness": 1.6523999165202117,
+          "BestFitness": 1.6523999165202117,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 12,
+          "F": 0.15625,
+          "V1": 0,
+          "V2": 0.0059375000000000009,
+          "Fitness": 1.6550379680384206,
+          "BestFitness": 1.6550379680384206,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 13,
+          "F": 0.078125,
+          "V1": 0,
+          "V2": 0.0059375000000000009,
+          "Fitness": 1.6658996764008744,
+          "BestFitness": 1.6658996764008744,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 14,
+          "F": 0.078125,
+          "V1": 0,
+          "V2": 0.0054687500000000014,
+          "Fitness": 1.6674648675986141,
+          "BestFitness": 1.6674648675986141,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 15,
+          "F": 0.078125,
+          "V1": 0,
+          "V2": 0.0059375000000000018,
+          "Fitness": 1.6658996764008744,
+          "BestFitness": 1.6674648675986141,
+          "Phase": "coordinate"
+        },
+        {
+          "Evaluation": 16,
+          "F": 0,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.7049920400247291,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 17,
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.5228753422120695,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 18,
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.4819811269356828,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 19,
+          "F": 10,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.4585163082748422,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 20,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.6438308528621155,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 21,
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.5243816524542106,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 22,
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.4863444657697666,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 23,
+          "F": 10,
+          "V1": 0,
+          "V2": 0.02,
+          "Fitness": 1.4629593040197557,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 24,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.596854712206885,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 25,
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.5118414315239614,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 26,
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.4769551105517946,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 27,
+          "F": 10,
+          "V1": 0,
+          "V2": 0.04,
+          "Fitness": 1.4541526197406263,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 28,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.5574600981208857,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 29,
+          "F": 3.3333333333333335,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.4985412702012508,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 30,
+          "F": 6.666666666666667,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.468123129870194,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 31,
+          "F": 10,
+          "V1": 0,
+          "V2": 0.06,
+          "Fitness": 1.4470863410289112,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "independent_grid"
+        },
+        {
+          "Evaluation": 32,
+          "F": 2.5,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.5401313117698203,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 33,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.015,
+          "Fitness": 1.6515292375450867,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 34,
+          "F": 1.25,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.581700610206791,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 35,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.0075,
+          "Fitness": 1.672672561844593,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 36,
+          "F": 0.625,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.6205512904475436,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 37,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.00375,
+          "Fitness": 1.6872764004737519,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 38,
+          "F": 0.3125,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.6523675706682155,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 39,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.001875,
+          "Fitness": 1.6957083787298506,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 40,
+          "F": 0.15625,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.6747708651826829,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 41,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.0009375,
+          "Fitness": 1.7002384770170713,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 42,
+          "F": 0.078125,
+          "V1": 0,
+          "V2": 0,
+          "Fitness": 1.6886264642679609,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        },
+        {
+          "Evaluation": 43,
+          "F": 0,
+          "V1": 0,
+          "V2": 0.00046875,
+          "Fitness": 1.7025870204180011,
+          "BestFitness": 1.7049920400247291,
+          "Phase": "grid_refinement"
+        }
+      ]
+    },
+    "comparison": [
+      {
+        "F": 5,
+        "V1": 0,
+        "V2": 0.02,
+        "Crop": 346.7304722893706,
+        "Stability": 0.66424924491025639,
+        "Cost": 10.8,
+        "Utility": 1.5024655377820257
+      },
+      {
+        "F": 0,
+        "V1": 0,
+        "V2": 0,
+        "Crop": 322.88176304889748,
+        "Stability": 0,
+        "Cost": 0,
+        "Utility": 1.7049920400247291
+      }
+    ],
+    "structuralVariants": [
+      {
+        "Variant": "principal",
+        "Crop": 346.7304722893706,
+        "Stability": 0.66424924491025639,
+        "Diversity": 0.60826437835057634
+      },
+      {
+        "Variant": "paper_literal",
+        "Crop": 334.39477183039429,
+        "Stability": 0.67158635625936514,
+        "Diversity": 0.61498309652429084
+      }
+    ]
+  },
+  "sensitivity": {
+    "rows": 44,
+    "ranking": [
+      {
+        "Parameter": "income_utility_weight",
+        "MaxRelativeInfluence": 0.1338115367955946
+      },
+      {
+        "Parameter": "crop_pest_interaction",
+        "MaxRelativeInfluence": 0.11198769178768116
+      },
+      {
+        "Parameter": "initial_pests",
+        "MaxRelativeInfluence": 0.050007860721614415
+      },
+      {
+        "Parameter": "herbicide_efficacy",
+        "MaxRelativeInfluence": 0.046361082471160081
+      },
+      {
+        "Parameter": "initial_crop",
+        "MaxRelativeInfluence": 0.044301300548696056
+      },
+      {
+        "Parameter": "stability_utility_weight",
+        "MaxRelativeInfluence": 0.037602418312378538
+      },
+      {
+        "Parameter": "herbicide_decay",
+        "MaxRelativeInfluence": 0.011495492504559409
+      },
+      {
+        "Parameter": "fertilizer_efficacy",
+        "MaxRelativeInfluence": 0.0067943006871872451
+      },
+      {
+        "Parameter": "bee_pollination",
+        "MaxRelativeInfluence": 0.0041025513911392012
+      },
+      {
+        "Parameter": "pollination_decay",
+        "MaxRelativeInfluence": 0.00052236084205362933
+      },
+      {
+        "Parameter": "upper_bound_1",
+        "MaxRelativeInfluence": 0
+      },
+      {
+        "Parameter": "upper_bound_3",
+        "MaxRelativeInfluence": 0
+      }
+    ],
+    "profiles": [
+      {
+        "Model": 1,
+        "Profile": "reconstructed_low",
+        "Crop": 318.251301171001,
+        "Stability": 0.522561397770253,
+        "Fitness": 1.4195158402016039
+      },
+      {
+        "Model": 1,
+        "Profile": "reconstructed_baseline",
+        "Crop": 346.45549689628047,
+        "Stability": 0.45127729979224085,
+        "Fitness": 1.4555811284937381
+      },
+      {
+        "Model": 1,
+        "Profile": "reconstructed_high",
+        "Crop": 374.15442504890979,
+        "Stability": 0.34626408263578967,
+        "Fitness": 1.480522877301456
+      },
+      {
+        "Model": 2,
+        "Profile": "reconstructed_low",
+        "Crop": 324.97937602947724,
+        "Stability": 0.53572117299783362,
+        "Fitness": 1.4334846641634089
+      },
+      {
+        "Model": 2,
+        "Profile": "reconstructed_baseline",
+        "Crop": 348.00202609978521,
+        "Stability": 0.52157411907195872,
+        "Fitness": 1.4699332774551532
+      },
+      {
+        "Model": 2,
+        "Profile": "reconstructed_high",
+        "Crop": 360.31012444511254,
+        "Stability": 0.54243310047243121,
+        "Fitness": 1.4930763585852045
+      },
+      {
+        "Model": 3,
+        "Profile": "reconstructed_low",
+        "Crop": 332.49922233453293,
+        "Stability": 0.65297572326526476,
+        "Fitness": 1.4770190388761815
+      },
+      {
+        "Model": 3,
+        "Profile": "reconstructed_baseline",
+        "Crop": 346.7304722893706,
+        "Stability": 0.66424924491025639,
+        "Fitness": 1.5024655377820257
+      },
+      {
+        "Model": 3,
+        "Profile": "reconstructed_high",
+        "Crop": 355.53293478478565,
+        "Stability": 0.68035757905329075,
+        "Fitness": 1.5191050659103651
+      }
+    ],
+    "perturbations": [
+      -0.2,
+      -0.1,
+      0.1,
+      0.2
+    ],
+    "boundsStudy": "Model II upper F / V2 ±20%; grid3 sweeps3 for control and all four perturbations"
+  },
+  "figureConvention": "NEW English scientific plots; no historical images; normalization disclosed per figure"
+}

@@ -1,0 +1,13 @@
+Parameter,MaxRelativeInfluence
+income_utility_weight,0.133811536795595
+crop_pest_interaction,0.111987691787681
+initial_pests,0.0500078607216144
+herbicide_efficacy,0.0463610824711601
+initial_crop,0.0443013005486961
+stability_utility_weight,0.0376024183123785
+herbicide_decay,0.0114954925045594
+fertilizer_efficacy,0.00679430068718725
+bee_pollination,0.0041025513911392
+pollination_decay,0.000522360842053629
+upper_bound_1,0
+upper_bound_3,0

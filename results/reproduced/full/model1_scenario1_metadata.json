@@ -1,0 +1,131 @@
+{
+  "config": {
+    "model": 1,
+    "species": 4,
+    "peregrine": "code_informed",
+    "pollination": "population_coupled",
+    "classification": "RECONSTRUCTION_ASSUMPTION; NOT recovered historical parameters",
+    "source": "Paper physical pp7-8 (5)-(18), p11 (19)-(23), p15 (26)-(27); private notes",
+    "parameters": {
+      "r10": 0.55,
+      "tauF": 0.018,
+      "betaF": 0.08,
+      "A": 0.35,
+      "Ts": 12,
+      "K10": 380,
+      "iota": 0.002,
+      "capacityLambda": 0.012,
+      "r2": 0.65,
+      "K2": 160,
+      "lambda12": 0.0013,
+      "V10": 180,
+      "phi1": 0.12,
+      "r3": 0.045,
+      "K30": 110,
+      "rhoN1": 0.7,
+      "rhoN2": 0.3,
+      "lambda13": 0.00035,
+      "lambda34": 0.0028,
+      "V20": 100,
+      "phi2": 0.1,
+      "gamma4": 0.055,
+      "ti": 30,
+      "F": 5,
+      "V1": 0.035,
+      "V2": 0.01
+    },
+    "stabilityWeights": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "profile": "reconstructed_baseline",
+    "initial": [
+      180,
+      35,
+      25,
+      18
+    ],
+    "objectiveWeights": [
+      0.25,
+      0.6,
+      0.15
+    ],
+    "lower": [
+      0,
+      0,
+      0
+    ],
+    "upper": [
+      10,
+      0.06,
+      0.06
+    ],
+    "horizon": 36,
+    "outputStep": 0.5,
+    "applicationPeriod": 6,
+    "harvestPeriod": 12,
+    "relTol": 1E-6,
+    "absTol": 1E-8,
+    "maxStep": 0.5,
+    "cropPrice": 0.05,
+    "gridLevels": 4,
+    "searchSweeps": 6,
+    "searchStepFraction": 0.25,
+    "solver": "segmented ode45; projected boundary vector field; right-continuous event outputs",
+    "optimizer": "NEW deterministic baseline-start coordinate search + independent coarse grid; grid refinement if needed",
+    "chemicalScenarios": [
+      [
+        0.035,
+        0.01
+      ],
+      [
+        0.02,
+        0.01
+      ],
+      [
+        0.01,
+        0.01
+      ],
+      [
+        0.02,
+        0.02
+      ],
+      [
+        0.05,
+        0.03
+      ],
+      [
+        0.02,
+        0.005
+      ]
+    ],
+    "scenarioSource": "DOCUMENTED paper physical p9 Figure4; second archived filename conflicts"
+  },
+  "meanCrop": 363.44256974455186,
+  "meanStability": 0.41556384528729229,
+  "meanDiversity": 0.38340368188358237,
+  "objective": {
+    "fitness": 1.4724932683011094,
+    "meanCrop": 363.44256974455186,
+    "meanStability": 0.41556384528729229,
+    "income": 18.172128487227592,
+    "cost": 12.15,
+    "weights": [
+      0.25,
+      0.6,
+      0.15
+    ],
+    "cropPrice": 0.05,
+    "decision": [
+      5,
+      0.035,
+      0.01
+    ],
+    "aggregation": "NEW trapezoidal time_average"
+  },
+  "negativeTrialCount": 92,
+  "boundaryRemovalCount": 453,
+  "classification": "NUMERICALLY RECONSTRUCTED WITH ASSUMPTIONS",
+  "eventConvention": "post-event sampled states; segmented pre-event quadrature; pre-harvest crop in events CSV"
+}

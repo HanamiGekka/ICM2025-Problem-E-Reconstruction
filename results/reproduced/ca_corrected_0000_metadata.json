@@ -1,0 +1,65 @@
+{
+  "config": {
+    "variant": "corrected",
+    "dt": 0.1,
+    "duration": 100,
+    "initial": [
+      200,
+      40,
+      30,
+      20,
+      20,
+      10,
+      50,
+      20
+    ],
+    "fertilizerOn": 10,
+    "pestCapacity": 125.7569,
+    "harvestPeriod": 12,
+    "managementPeriod": 6,
+    "weedRetention": 0.8,
+    "pestRetention": 0.8,
+    "costConvention": "ca",
+    "metric": "corrected",
+    "source": "Private late cellular automata implementation; paper physical pp19-20",
+    "evidence": "DOCUMENTED source values; RECONSTRUCTED implementation",
+    "sourceSHA256": "83280A889A754EA8B25C18156B5D82DAA3D36859F934F8CE25C27A317296BBD0",
+    "component": "ca",
+    "n": 24,
+    "steps": 420,
+    "switches": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "seed": 2.0251027E+7,
+    "rngAlgorithm": "twister",
+    "noiseAmplitude": 0.03,
+    "seasonPeriod": 12,
+    "costDuration": 100,
+    "blockSize": 3,
+    "rgbScales": [
+      616.66666666666674,
+      400,
+      0.91769139364825292
+    ],
+    "normalization": "fixed positive channel scales, clipped [0,1]"
+  },
+  "runId": "ca_corrected_0000",
+  "matlab": "23.2.0.2365128 (R2023b)",
+  "generatedUTC": "2026-10-06 22:15:29",
+  "classification": "REGENERATED RECONSTRUCTED RESULT; n24/420steps are NEW representative settings",
+  "F": 0,
+  "clippedStateValues": 0,
+  "normalizationPeaks": [
+    0,
+    381.0821255388048,
+    0.84988975193012062
+  ],
+  "eventOrder": "old-state RHS -> clipped Euler -> harvest -> weed/pest -> metrics -> RGB",
+  "timeMeaning": "RHS label (step-1)*dt; exported final state follows last update/events",
+  "fixedSeedRepeatExact": true,
+  "stateFlattenOrder": "MATLAB column-major, cells x8",
+  "rgbFlattenOrder": "MATLAB column-major, enlarged pixels x3; PNG display clipped"
+}

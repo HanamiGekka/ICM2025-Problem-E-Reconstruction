@@ -1,0 +1,21 @@
+# Private recovered evidence is retained locally. Future publication uses reviewed copies.
+/Original/
+/demand/
+/temp/
+
+# Future local environment and generated caches
+/.conda/
+/.venv/
+__pycache__/
+*.asv
+
+# RUN #1.0 process-local MATLAB preferences, batch logs and working caches
+/.work/
+*.m~
+*.slxc
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+~$*

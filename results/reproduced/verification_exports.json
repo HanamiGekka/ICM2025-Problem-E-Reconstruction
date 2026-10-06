@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "trajectories": 13,
+  "figures": 12,
+  "sensitivityRows": 44,
+  "profileRows": 9,
+  "matlab": "23.2.0.2365128 (R2023b)",
+  "historicalArchiveRequired": false
+}

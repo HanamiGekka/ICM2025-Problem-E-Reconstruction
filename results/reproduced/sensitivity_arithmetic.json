@@ -1,0 +1,29 @@
+{
+  "source": "Private paper physical p23 Table7",
+  "classification": "RECALCULATED DOCUMENTED ARITHMETIC, not regenerated population response",
+  "matlab": "23.2.0.2365128 (R2023b)",
+  "runId": "table7-arithmetic-v1",
+  "arithmetic": {
+    "definition": "DeltaY/DeltaF; no original regression fitting",
+    "stabilityEndpoint": 0.0028799999999999937,
+    "fieldEndpoint": -0.018960000000000043,
+    "stabilityAdjacent": [
+      0.0029000000000000137,
+      0.0029000000000000137,
+      0.0029000000000000137,
+      0.0027999999999999137,
+      0.0029000000000000137
+    ],
+    "fieldAdjacent": [
+      -0.020900000000000141,
+      -0.01980000000000004,
+      -0.018899999999999917,
+      -0.017999999999999794,
+      -0.017200000000000326
+    ],
+    "printedStabilityCoefficient": 0.00866,
+    "printedFieldCoefficient": -0.05872,
+    "stabilityDifference": -0.0057800000000000056,
+    "fieldDifference": 0.039759999999999962
+  }
+}
