@@ -6,7 +6,9 @@ if($allowed.Count -ne @($allowed | Sort-Object -Unique).Count){throw 'Duplicate 
 $forbidden='^(Original|demand|temp|\.work|docs/audit|docs/development)(/|$)|\.(pdf|docx|zip|fig|mat|exe|dll|pfx|pem)$'
 $sensitive='(?<![A-Za-z0-9])[A-Za-z]:[\\/]|[\p{IsCJKUnifiedIdeographs}]|(?<![A-Za-z0-9.])1[3-9][0-9]{9}(?![A-Za-z0-9.])|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|(?:sk-|ghp_|github_pat_)[A-Za-z0-9_]{16,}'
 $sensitive+='|'+('-----'+'BEGIN .*PRIVATE KEY'+'-----')
-$extensions=@('.md','.m','.ps1','.csv','.json','.png','.gitignore','')
+$extensions=@('.md','.m','.ps1','.csv','.json','.png','.gitignore','.py','.yml','')
+# Natural-language content is reviewed only in these four README entry points.
+$localizedReadmes=@('README.md','README.zh-CN.md','README.ja.md','README.zh-TW.md')
 # Explicit user-authorized historical copies; never a whole-directory exception.
 $authorizedDocuments=@{
  'historical-documents/competition-paper.pdf'='3F3E6D2F76A29596644AD8932BD6CB987D74CA5B871A082233AC3B70F361F808'
@@ -43,7 +45,9 @@ function CheckFile([string]$path,[byte[]]$bytes){
    $position+=12+$length
   }
  } else {$text=[Text.Encoding]::UTF8.GetString($bytes)}
- if($text -match $sensitive){throw "Potential private identifier/path/credential in: $path"}
+ $contentSensitive=$sensitive
+ if($path -in $localizedReadmes){$contentSensitive=$contentSensitive.Replace('[\p{IsCJKUnifiedIdeographs}]|','')}
+ if($text -match $contentSensitive){throw "Potential private identifier/path/credential in: $path"}
  foreach($term in $PrivateTerms){if($text -match ('(?<![A-Za-z0-9.])'+[regex]::Escape($term)+'(?![A-Za-z0-9])')){throw "Known private identifier in: $path"}}
 }
 function ReadGitBlob([string]$revision,[string]$path){
@@ -64,6 +68,7 @@ foreach($private in @('Original','demand','temp','docs/audit','docs/development'
  if(Test-Path -LiteralPath (Join-Path $root $private)){throw "Private directory present: $private"}
 }
 $files=@(Get-ChildItem -LiteralPath $root -Recurse -File -Force | Where-Object {
+ !$_.FullName.Equals((Join-Path $root '.git'),[StringComparison]::OrdinalIgnoreCase) -and
  !$_.FullName.StartsWith((Join-Path $root '.git')+'\') -and !$_.FullName.StartsWith((Join-Path $root '.work')+'\')
 })
 $paths=@()

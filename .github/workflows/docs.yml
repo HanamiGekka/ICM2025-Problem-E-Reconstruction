@@ -1,0 +1,24 @@
+name: Documentation and public-surface checks
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  documentation:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: README language navigation and local links
+        run: python scripts/check_readmes.py
+      - name: Reviewed public files, history and license boundary
+        shell: pwsh
+        run: |
+          $origin = (git remote get-url origin).Trim()
+          $approved = @('https://github.com/HanamiGekka/ICM2025-Problem-E-Reconstruction', 'https://github.com/HanamiGekka/ICM2025-Problem-E-Reconstruction.git')
+          if ($origin -notin $approved) { throw 'Unexpected repository origin' }
+          ./scripts/verify_public.ps1 -GitExe (Get-Command git).Source -ExpectedOrigin $origin

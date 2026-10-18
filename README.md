@@ -1,4 +1,8 @@
+[English](README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [繁體中文](README.zh-TW.md)
+
 # Reconstructed farmland ecosystem models
+
+Release: [v1.0.0](https://github.com/HanamiGekka/ICM2025-Problem-E-Reconstruction/releases/tag/v1.0.0). MATLAB reconstruction of **2025 ICM Problem E**.
 
 A MATLAB reconstruction of four modeling workflows developed around the 2025 ICM Problem E farmland ecosystem problem. The complete original competition codebase was not recovered. Some historical MATLAB implementation survives privately. The public code is a reconstructed implementation based on the competition paper, surviving mathematical notes, selected historical source behavior and documented results.
 
@@ -17,11 +21,22 @@ Configuration → documented RHS → segmented integration/events → diversity/
 
 ![Reconstructed pollination alternatives](results/reproduced/full/model3_pollination.png)
 
-![New sensitivity ranking](results/reproduced/full/sensitivity_ranking.png)
+![Reconstruction sensitivity ranking](results/reproduced/full/sensitivity_ranking.png)
+
+## Evidence and terminology
+
+| Material | Meaning in this repository |
+| --- | --- |
+| Original historical material | The authorized paper and certificate in `historical-documents/`; the remaining historical archive stays private |
+| Reconstructed implementation | Runnable MATLAB code based on disclosed evidence and choices; not the complete original competition source |
+| New assumptions | Explicit coefficients, initial conditions, schedules, solvers and preferences in the parameter registry and methodology |
+| Historical-compatible variant | `historical_compat` preserves the documented surviving Task4 behavior |
+| Corrected variant | `corrected` discloses horizon, zero-pest and preference corrections; it intentionally changes some outputs |
+| Reproduced outputs | Generated reconstruction plots, CSV and verification files, not measured agricultural observations |
 
 ## Quick start
 
-Verified with MATLAB R2023b (23.2.0.2365128), Windows x64, base MATLAB only. No additional toolbox or Python environment is required. From the repository root:
+Verified with MATLAB R2023b (23.2.0.2365128), Windows x64, base MATLAB only. No additional toolbox or Python environment is required for the numerical workflows. From the repository root:
 
 ```matlab
 addpath('src/matlab','tests/matlab');
@@ -75,5 +90,3 @@ historical-documents/   authorized historical paper and certificate; outside MIT
 Historical contest mathematics and competition work motivate this reconstruction. The [original paper and award certificate](historical-documents/README.md) are included as explicitly authorized historical copies in a separate folder. Their historical names, signatures and document metadata are retained; the rest of the private archive remains excluded. Cite the release tag and parameter profile when using an output; do not cite this as the full original competition source.
 
 [MIT](LICENSE) applies to newly authored reconstructed software only. It grants no rights over contest documents, private historical source/documents, reference papers, datasets, photographs, certificates or third-party artifacts. Reviewed target transcriptions are attributed evidence outside the software license claim. All displayed images are newly generated plots/CA renderings. This public repository was prepared from an explicit whitelist and fresh Git history. Internal audit/history and the private archive are excluded, with only the two hash-pinned historical PDF copies explicitly authorized.
-
-

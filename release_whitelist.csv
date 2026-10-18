@@ -157,3 +157,8 @@
 "tests/matlab/test_release.m","New reconstruction / reviewed numeric transcription; no private artifact"
 "tests/matlab/test_targets.m","New reconstruction / reviewed numeric transcription; no private artifact"
 "tests/matlab/test_task4.m","New reconstruction / reviewed numeric transcription; no private artifact"
+"README.zh-CN.md","Reviewed documentation maintenance; no private data or numerical change"
+"README.ja.md","Reviewed documentation maintenance; no private data or numerical change"
+"README.zh-TW.md","Reviewed documentation maintenance; no private data or numerical change"
+"scripts/check_readmes.py","Reviewed documentation maintenance; no private data or numerical change"
+".github/workflows/docs.yml","Reviewed documentation maintenance; no private data or numerical change"
